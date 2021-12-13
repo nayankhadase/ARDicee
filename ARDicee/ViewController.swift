@@ -23,11 +23,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
 
         // Create a new scene
-        let diceScene = SCNScene(named: "art.scnassets/diceCollada.scn")!
+        let diceScene = SCNScene(named: "art.scnassets/Pokemon.scn")!
         
-        if let diceNode = diceScene.rootNode.childNode(withName: "Dice", recursively: true){
-        
-            diceNode.position = SCNVector3(x: 0, y: 0, z: -0.1)
+        if let diceNode = diceScene.rootNode.childNode(withName: "Ivysaur_4_low", recursively: true){
+            print("hi")
+            diceNode.position = SCNVector3(x: 0, y: 0, z: -1)
             
             sceneView.scene.rootNode.addChildNode(diceNode)
             
